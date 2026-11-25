@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 600" fill="none">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b4047"/>
+      <stop offset="1" stop-color="#16181b"/>
+    </linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101216"/>
+      <stop offset="1" stop-color="#060708"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#2be06a" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#2be06a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect x="20" y="16" width="260" height="568" rx="36"/></clipPath>
+  </defs>
+  <style>
+    .arc{opacity:.15;animation:pulse 2.6s ease-in-out infinite}
+    .a2{animation-delay:.25s}.a3{animation-delay:.5s}
+    @keyframes pulse{0%,100%{opacity:.15}45%{opacity:1}}
+    .dot{animation:dot 2.6s ease-in-out infinite;transform-origin:150px 340px}
+    @keyframes dot{0%,100%{transform:scale(1)}45%{transform:scale(1.25)}}
+    @media (prefers-reduced-motion:reduce){.arc,.dot{animation:none;opacity:1}}
+  </style>
+  <rect x="3" y="124" width="5" height="34" rx="2" fill="#2a2d32"/>
+  <rect x="3" y="176" width="5" height="62" rx="2" fill="#2a2d32"/>
+  <rect x="292" y="170" width="5" height="84" rx="2" fill="#2a2d32"/>
+  <rect x="8" y="4" width="284" height="592" rx="46" fill="url(#body)" stroke="#4d535b" stroke-width="2"/>
+  <rect x="20" y="16" width="260" height="568" rx="36" fill="url(#scr)"/>
+  <g clip-path="url(#clip)">
+    <circle cx="150" cy="330" r="150" fill="url(#glow)"/>
+    <path d="M20 16H190L20 330Z" fill="#fff" opacity=".035"/>
+    <g stroke="#2be06a" stroke-width="9" stroke-linecap="round">
+      <path class="arc a3" d="M72.2 262.2A110 110 0 0 1 227.8 262.2"/>
+      <path class="arc a2" d="M97 287A75 75 0 0 1 203 287"/>
+      <path class="arc" d="M121.7 311.7A40 40 0 0 1 178.3 311.7"/>
+    </g>
+    <circle class="dot" cx="150" cy="340" r="8" fill="#2be06a"/>
+    <rect x="68" y="424" width="164" height="10" rx="5" fill="#fff" opacity=".14"/>
+    <rect x="94" y="446" width="112" height="8" rx="4" fill="#fff" opacity=".07"/>
+    <rect x="40" y="500" width="220" height="44" rx="22" fill="#fff" opacity=".05"/>
+    <rect x="110" y="566" width="80" height="5" rx="2.5" fill="#fff" opacity=".4"/>
+    <circle cx="248" cy="42" r="3" fill="#fff" opacity=".4"/>
+    <rect x="226" y="39" width="14" height="7" rx="2" fill="#fff" opacity=".4"/>
+    <rect x="44" y="39" width="26" height="7" rx="3.5" fill="#fff" opacity=".4"/>
+  </g>
+  <rect x="112" y="28" width="76" height="22" rx="11" fill="#000"/>
+  <circle cx="176" cy="39" r="4" fill="#12151a" stroke="#242831"/>
+</svg>

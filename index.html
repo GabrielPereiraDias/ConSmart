@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conexão Smart — Assistência técnica de celulares e tablets em Santo André</title>
+  <meta name="description" content="Assistência técnica para celulares e tablets em Santo André, SP. Atendimento próximo, praticidade e cuidado com seu dispositivo. Solicite atendimento pelo WhatsApp." />
+  <meta name="theme-color" content="#08090a" />
+  <!-- DEMONSTRAÇÃO: remova a linha abaixo se a página for publicada oficialmente -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Conexão Smart — Assistência técnica de celulares e tablets" />
+  <meta property="og:description" content="Atendimento próximo, praticidade e cuidado com seu dispositivo. Santo André, SP." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ícones (estilo Lucide, inline para não depender de biblioteca externa) -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+      <symbol id="i-tablet" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><line x1="12" x2="12.01" y1="18" y2="18"/></symbol>
+      <symbol id="i-screen" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="8" y="5" width="8" height="11" rx="1"/><path d="M11 19h2"/></symbol>
+      <symbol id="i-battery" viewBox="0 0 24 24"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1"/><path d="m11 7-3 5h4l-3 5"/><line x1="22" x2="22" y1="11" y2="13"/></symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/><path d="m16 16-1.9-1.9"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.65-4.9A9 9 0 1 1 8 19.4z"/><path d="M9 8.8c0 3.3 2.9 6.2 6.2 6.2l1-1.3-1.8-1-.8.7a3.6 3.6 0 0 1-1.7-1.7l.7-.8-1-1.8z"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Conexão Smart — ir para o início">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+            <path d="M8 13.5a11 11 0 0 1 16 0" opacity=".45"/>
+            <path d="M11.5 18a6 6 0 0 1 9 0" opacity=".75"/>
+            <circle cx="16" cy="23" r="2.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="logo-text">CONEXÃO<b>SMART</b></span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <a class="nav-link" href="#inicio">Início</a>
+        <a class="nav-link" href="#servicos">Serviços</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#contato">Contato</a>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">
+          Solicitar orçamento
+        </a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">
+        Solicitar orçamento
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-orb"></span>
+        <span class="hero-grid-lines"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill reveal"><span class="pill-dot" aria-hidden="true"></span>Assistência técnica · Santo André, SP</p>
+          <h1 class="reveal" style="--d:80ms">Seu celular merece voltar a funcionar <span class="hl">perfeitamente.</span></h1>
+          <p class="lead reveal" style="--d:160ms">Assistência técnica para celulares e tablets. Atendimento próximo, praticidade e cuidado com seu dispositivo.</p>
+
+          <div class="hero-actions reveal" style="--d:240ms">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20atendimento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">
+              <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Solicitar atendimento
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#servicos">
+              Conheça nossos serviços
+              <svg class="ico ico-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero-facts reveal" style="--d:320ms">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-smartphone"/></svg>Celulares e tablets</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>Contato direto pelo WhatsApp</li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Vila Camilópolis, Santo André</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:200ms" data-parallax aria-hidden="true">
+          <div class="stage">
+            <span class="stage-ring r1"></span>
+            <span class="stage-ring r2"></span>
+            <span class="stage-ring r3"></span>
+
+            <div class="layer l-board" data-depth="0.5"><img src="img/placa.svg" width="300" height="600" alt="" /></div>
+            <div class="layer l-tablet" data-depth="0.8"><img src="img/tablet.svg" width="520" height="380" alt="" /></div>
+            <div class="layer l-phone" data-depth="1.2"><img src="img/celular.svg" width="300" height="600" alt="" fetchpriority="high" /></div>
+            <div class="layer l-tools" data-depth="1.6"><img src="img/ferramentas.svg" width="420" height="210" alt="" /></div>
+
+            <div class="chip chip-1" data-depth="2"><svg class="ico" aria-hidden="true"><use href="#i-screen"/></svg>Tela</div>
+            <div class="chip chip-2" data-depth="2.4"><svg class="ico" aria-hidden="true"><use href="#i-battery"/></svg>Bateria</div>
+            <div class="chip chip-3" data-depth="1.8"><svg class="ico" aria-hidden="true"><use href="#i-scan"/></svg>Diagnóstico</div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#servicos" aria-label="Rolar para os serviços"><span></span></a>
+    </section>
+
+    <!-- ============ FAIXA ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Smartphones</span><i></i><span>Tablets</span><i></i><span>Troca de tela</span><i></i><span>Bateria</span><i></i><span>Conectores</span><i></i><span>Diagnóstico técnico</span><i></i>
+        <span>Smartphones</span><i></i><span>Tablets</span><i></i><span>Troca de tela</span><i></i><span>Bateria</span><i></i><span>Conectores</span><i></i><span>Diagnóstico técnico</span><i></i>
+      </div>
+    </div>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Serviços</p>
+            <h2 class="reveal" style="--d:60ms">Cuidado técnico para o seu aparelho.</h2>
+            <p class="section-sub reveal" style="--d:120ms">Exemplos ilustrativos de serviços comuns em assistências técnicas. Os serviços realizados e as condições de cada atendimento devem ser confirmados diretamente com a empresa.</p>
+          </div>
+          <div class="carousel-controls reveal" style="--d:160ms">
+            <button class="round-btn" type="button" data-carousel="prev" aria-label="Serviços anteriores">
+              <svg class="ico" aria-hidden="true"><use href="#i-chevron-left"/></svg>
+            </button>
+            <button class="round-btn" type="button" data-carousel="next" aria-label="Próximos serviços">
+              <svg class="ico" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel reveal" style="--d:120ms">
+        <ul class="track" id="services-track" tabindex="0" aria-label="Lista de serviços ilustrativos">
+          <li class="card spot" data-service="troca de tela">
+            <span class="card-num">01</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-screen"/></svg></span>
+            <h3>Troca de tela</h3>
+            <p>Avaliação de telas com danos, manchas ou falhas de toque para indicar o caminho de reparo mais adequado.</p>
+            <a class="card-link" href="#contato" data-wa-service="troca de tela">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+          <li class="card spot" data-service="substituição de bateria">
+            <span class="card-num">02</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-battery"/></svg></span>
+            <h3>Substituição de bateria</h3>
+            <p>Para aparelhos que descarregam rápido ou desligam sozinhos. Consulte as possibilidades para o seu modelo.</p>
+            <a class="card-link" href="#contato" data-wa-service="substituição de bateria">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+          <li class="card spot" data-service="diagnóstico técnico">
+            <span class="card-num">03</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-scan"/></svg></span>
+            <h3>Diagnóstico técnico</h3>
+            <p>Análise do aparelho para entender a origem do problema antes de qualquer decisão sobre o reparo.</p>
+            <a class="card-link" href="#contato" data-wa-service="diagnóstico técnico">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+          <li class="card spot" data-service="manutenção de conectores">
+            <span class="card-num">04</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-plug"/></svg></span>
+            <h3>Manutenção de conectores</h3>
+            <p>Verificação de conectores de carga e outras entradas que apresentam mau contato ou falhas.</p>
+            <a class="card-link" href="#contato" data-wa-service="manutenção de conectores">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+          <li class="card spot" data-service="reparo em smartphone">
+            <span class="card-num">05</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-smartphone"/></svg></span>
+            <h3>Reparos em smartphones</h3>
+            <p>Atendimento para diferentes tipos de problema em smartphones. Conte à equipe o que está acontecendo.</p>
+            <a class="card-link" href="#contato" data-wa-service="reparo em smartphone">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+          <li class="card spot" data-service="manutenção de tablet">
+            <span class="card-num">06</span>
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-tablet"/></svg></span>
+            <h3>Manutenção de tablets</h3>
+            <p>Cuidado também com tablets: fale com a equipe sobre o modelo e o problema apresentado.</p>
+            <a class="card-link" href="#contato" data-wa-service="manutenção de tablet">Consultar <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+        </ul>
+        <div class="carousel-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section section-alt" id="diferenciais">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <div>
+            <p class="eyebrow reveal">Diferenciais</p>
+            <h2 class="reveal" style="--d:60ms">Atenção a cada detalhe, do primeiro contato ao fim do atendimento.</h2>
+          </div>
+        </div>
+
+        <div class="bento">
+          <article class="tile tile-lg spot reveal">
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></span>
+            <h3>Atendimento personalizado</h3>
+            <p>Cada aparelho e cada situação são diferentes. A conversa começa pelo que você está enfrentando, e não por uma solução pronta.</p>
+            <img class="tile-art" src="img/celular.svg" width="300" height="600" alt="" aria-hidden="true" loading="lazy" />
+          </article>
+
+          <article class="tile spot reveal" style="--d:80ms">
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span>
+            <h3>Diagnóstico cuidadoso</h3>
+            <p>Entender o problema com atenção antes de falar em solução.</p>
+          </article>
+
+          <article class="tile spot reveal" style="--d:160ms">
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-message"/></svg></span>
+            <h3>Facilidade de contato</h3>
+            <p>WhatsApp, Instagram e endereço à mão, para falar com a equipe do jeito mais simples.</p>
+          </article>
+
+          <article class="tile tile-wide spot reveal" style="--d:240ms">
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></span>
+            <h3>Cuidado com os dispositivos</h3>
+            <p>Seu aparelho guarda fotos, conversas e rotina. Ele merece ser tratado com respeito e atenção.</p>
+          </article>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Toque no botão e envie a mensagem inicial, que já vem pronta.</p>
+          </li>
+          <li class="step reveal" style="--d:100ms">
+            <span class="step-num">2</span>
+            <h3>Conte o que aconteceu</h3>
+            <p>Informe o modelo do aparelho e descreva o problema que você percebeu.</p>
+          </li>
+          <li class="step reveal" style="--d:200ms">
+            <span class="step-num">3</span>
+            <h3>Converse com a equipe</h3>
+            <p>Receba orientação sobre as possibilidades e os próximos passos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CTA INTERMEDIÁRIO ============ -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-card reveal">
+          <span class="cta-arcs" aria-hidden="true"></span>
+          <div class="cta-copy">
+            <h2 id="cta-title">Está com algum problema no seu dispositivo?</h2>
+            <p>Entre em contato e consulte as possibilidades de reparo.</p>
+            <a class="btn btn-primary btn-lg pulse" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Estou%20com%20um%20problema%20no%20meu%20dispositivo%20e%20gostaria%20de%20consultar%20as%20possibilidades%20de%20reparo." target="_blank" rel="noopener noreferrer">
+              <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Conversar pelo WhatsApp
+            </a>
+          </div>
+          <img class="cta-art" src="img/ferramentas.svg" width="420" height="210" alt="" aria-hidden="true" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container about-grid">
+        <figure class="about-art reveal">
+          <img src="img/bancada.svg" width="720" height="560" alt="Ilustração de uma bancada de reparo com celular, tablet, bateria, chip e ferramentas" loading="lazy" />
+          <figcaption>Ilustração criada para esta demonstração</figcaption>
+        </figure>
+
+        <div class="about-copy">
+          <p class="eyebrow reveal">Sobre</p>
+          <h2 class="reveal" style="--d:60ms">Tecnologia que precisa funcionar, atendimento que fica por perto.</h2>
+          <p class="reveal" style="--d:120ms">A Conexão Smart é uma assistência técnica de celulares e tablets localizada em Santo André, São Paulo. O objetivo é simples: ajudar você a entender o que está acontecendo com o seu aparelho e a escolher o melhor caminho.</p>
+
+          <ul class="about-list reveal" style="--d:180ms">
+            <li><svg class="ico" aria-hidden="true"><use href="#i-smartphone"/></svg><span>Smartphones</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-tablet"/></svg><span>Tablets</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Atendimento via WhatsApp</span></li>
+          </ul>
+
+          <p class="note reveal" style="--d:240ms">Texto ilustrativo e editável. A história, a equipe e os dados reais da empresa podem ser incluídos aqui após validação com os responsáveis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCALIZAÇÃO ============ -->
+    <section class="section section-alt" id="localizacao">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Localização</p>
+            <h2 class="reveal" style="--d:60ms">Fácil de encontrar em Santo André.</h2>
+          </div>
+        </div>
+
+        <div class="location-grid">
+          <div class="map-card reveal">
+            <img src="img/mapa.svg" width="640" height="440" alt="Mapa ilustrativo com a localização da assistência técnica" loading="lazy" />
+            <div class="map-label">
+              <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+              <span>Rua Olímpia, 448</span>
+            </div>
+            <span class="map-tag">Mapa ilustrativo</span>
+          </div>
+
+          <div class="info-card reveal" style="--d:100ms">
+            <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <h3>Conexão Smart Assistência Técnica Celular e Tablets</h3>
+            <address id="address-text">
+              Rua Olímpia, 448<br />
+              Vila Camilópolis<br />
+              Santo André – SP<br />
+              CEP 09230-500
+            </address>
+            <p class="muted">Para saber os horários de atendimento, fale pelo WhatsApp.</p>
+            <div class="info-actions">
+              <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Ol%C3%ADmpia%2C%20448%2C%20Vila%20Camil%C3%B3polis%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009230-500" target="_blank" rel="noopener noreferrer">
+                Ver no Google Maps
+                <svg class="ico" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+              <button class="btn btn-ghost" type="button" id="copy-address">
+                <svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg>
+                <span>Copiar endereço</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow reveal">Contato</p>
+          <h2 class="reveal" style="--d:60ms">Vamos conversar sobre o seu aparelho?</h2>
+          <p class="section-sub reveal" style="--d:120ms">Escolha o canal mais prático. O atendimento começa com uma conversa simples.</p>
+
+          <ul class="channels">
+            <li class="reveal" style="--d:160ms">
+              <a class="channel spot" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20atendimento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">
+                <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+                <span class="channel-text"><small>WhatsApp</small><strong>(11) 94732-5167</strong></span>
+                <svg class="ico channel-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li class="reveal" style="--d:220ms">
+              <a class="channel spot" href="https://www.instagram.com/assistencia_conexao_smart/" target="_blank" rel="noopener noreferrer">
+                <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+                <span class="channel-text"><small>Instagram</small><strong>@assistencia_conexao_smart</strong></span>
+                <svg class="ico channel-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li class="reveal" style="--d:280ms">
+              <a class="channel spot" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Ol%C3%ADmpia%2C%20448%2C%20Vila%20Camil%C3%B3polis%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009230-500" target="_blank" rel="noopener noreferrer">
+                <span class="card-icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <span class="channel-text"><small>Endereço</small><strong>Rua Olímpia, 448 · Vila Camilópolis</strong></span>
+                <svg class="ico channel-go" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="wa-form reveal" id="wa-form" style="--d:120ms" novalidate>
+          <h3>Solicite atendimento pelo WhatsApp</h3>
+          <p class="muted">Preencha e o WhatsApp abrirá com a mensagem pronta para enviar.</p>
+
+          <div class="field">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-tipo">Aparelho</label>
+              <select id="f-tipo" name="tipo">
+                <option value="celular">Celular</option>
+                <option value="tablet">Tablet</option>
+                <option value="aparelho">Outro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-modelo">Modelo <span class="opt">(opcional)</span></label>
+              <input id="f-modelo" name="modelo" type="text" placeholder="Ex.: marca e modelo" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-problema">O que está acontecendo?</label>
+            <textarea id="f-problema" name="problema" rows="4" placeholder="Descreva o problema com suas palavras" required></textarea>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert" hidden>Preencha seu nome e descreva o problema para continuar.</p>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">
+            <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="fineprint">Nenhum dado é armazenado neste site. A mensagem é enviada apenas por você, no WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#inicio" aria-label="Conexão Smart — ir para o início">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
+                <path d="M8 13.5a11 11 0 0 1 16 0" opacity=".45"/>
+                <path d="M11.5 18a6 6 0 0 1 9 0" opacity=".75"/>
+                <circle cx="16" cy="23" r="2.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span class="logo-text">CONEXÃO<b>SMART</b></span>
+          </a>
+          <p>Assistência técnica de celulares e tablets em Santo André, SP.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Rodapé">
+          <h4>Navegação</h4>
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <a href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20atendimento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer">WhatsApp · (11) 94732-5167</a>
+          <a href="https://www.instagram.com/assistencia_conexao_smart/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <span>Rua Olímpia, 448 · Vila Camilópolis<br />Santo André – SP · 09230-500</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Página de demonstração não oficial. Criada para apresentar design e desenvolvimento web; não representa o site oficial da Conexão Smart.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante -->
+  <a class="wa-float" href="https://wa.me/5511947325167?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20atendimento%20para%20o%20meu%20aparelho.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float-label">Falar no WhatsApp</span>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
